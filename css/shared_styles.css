@@ -1,0 +1,53 @@
+/* Shared styles */
+
+/* added F O N T S */
+@font-face {
+    font-family: "RalewayRegular";
+    src: url("../fonts/RalewayRegular/RalewayRegular.eot");
+    src: url("../fonts/RalewayRegular/RalewayRegular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/RalewayRegular/RalewayRegular.woff") format("woff"),
+    url("../fonts/RalewayRegular/RalewayRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "HelveticaRegular";
+    src: url("../fonts/HelveticaRegular/HelveticaRegular.eot");
+    src: url("../fonts/HelveticaRegular/HelveticaRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/HelveticaRegular/HelveticaRegular.woff") format("woff"),
+    url("../fonts/HelveticaRegular/HelveticaRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+.container {
+    width: 950px;
+    margin: 0 auto;
+}
+
+.section_header {
+    z-index: 1000;
+    position: relative;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "RalewayRegular", sans-serif;
+    font-weight: 400;
+}
+
+.section_header::after {
+    content: "";
+    display: block;
+    margin: 21px auto 0;
+    width: 42px;
+    height: 2px;
+    background-color: #d55727;
+}
+
+.clearfix::after,
+.col_wrap::after {
+    content: '';
+    overflow: hidden;
+    display: table;
+    clear: both;
+}
